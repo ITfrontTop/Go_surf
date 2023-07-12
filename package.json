@@ -24,6 +24,10 @@
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "sass": "^1.59.3",
+    "slick-carousel": "^1.8.1",
     "swiper": "^9.1.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.0"
   }
 }
