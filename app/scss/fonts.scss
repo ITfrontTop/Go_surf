@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Mulish-ExtraLight';
+    font-weight: 200;
+    font-style: normal;
+    src: local('Mulish-ExtraLight'),
+        url('../fonts/Mulish-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Mulish-ExtraLight.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-Light';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Mulish-Light'),
+        url('../fonts/Mulish-Light.woff2') format('woff2'),
+        url('../fonts/Mulish-Light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Mulish-Regular'),
+        url('../fonts/Mulish-Regular.woff2') format('woff2'),
+        url('../fonts/Mulish-Regular.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mulish-SemiBolt';
+    font-weight: 600;
+    font-style: normal;
+    src: local('Mulish-SemiBolt'),
+        url('../fonts/Mulish-SemiBold.woff2') format('woff2'),
+        url('../fonts/Mulish-SemiBold.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mulish-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Mulish-Bold'),
+        url('../fonts/Mulish-Bold.woff2') format('woff2'),
+        url('../fonts/Mulish-Bold.woff') format('woff');
+    font-display: swap;
+}
