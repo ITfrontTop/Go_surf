@@ -1,12 +1,15 @@
 body {
     @extend %fira-400;
-    color: #fff;
     font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
 }
 
 .suptitle-left {
@@ -27,5 +30,14 @@ a {
         background-color: #fff;
         left: 0;
         top: 50%;
+    }
+}
+
+.title {
+    span {
+
+    }
+    h3 {
+
     }
 }
