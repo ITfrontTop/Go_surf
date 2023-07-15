@@ -1,0 +1,43 @@
+body {
+    @extend %fira-400;
+    font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.suptitle-left {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.333px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .5;
+    padding-left: 103px;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        top: 50%;
+    }
+}
+
+.title {
+    span {
+
+    }
+    h3 {
+
+    }
+}
