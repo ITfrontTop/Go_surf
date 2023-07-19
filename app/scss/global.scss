@@ -38,6 +38,27 @@ a {
     }
 }
 
+.headline-right {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.333px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .5;
+    padding-right: 103px;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+    }
+}
+
 .title {
     span {
         @extend %fira-800;
@@ -79,6 +100,21 @@ a {
     }
 }
 
+.descr {
+    display: inline-block;
+    padding-left: 5px;
+    &__head {
+        @extend %fira-800;
+        font-size: 40px;
+        img {
+            display: inline-block;
+        }
+        span {
+            @extend %fira-100;
+        }
+    }
+}
+
 .btn {
     @extend %fira-800;
     font-size: 40px;
@@ -110,4 +146,13 @@ a {
             transform: translateY(-50%);
         }
     }
+}
+
+.surf,
+.travel {
+    padding: 160px 0 120px;
+}
+
+.travel {
+    padding-bottom: 265px;
 }
