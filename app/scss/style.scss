@@ -493,11 +493,23 @@
         background-position: right center;
         .descr__head {
             position: relative;
-            padding-right: 78px;
+            padding-right: 215px;
             img {
                 position: absolute;
                 right: 0;
                 top: 0;
+            }
+            .holder__star-list {
+                position: absolute;
+                right: 0;
+                top: 0;
+                li {
+                    display: inline-block;
+                    margin-left: -25px;
+                }
+                img {
+                    position: static;
+                }
             }
         }
     }
@@ -543,7 +555,7 @@
     @extend %fira-800;
     padding-left: 40px;
     position: relative;
-    span {
+    .holder-pricing__span {
         @extend %fira-400;
         font-size: 14px;
         line-height: 36px;
