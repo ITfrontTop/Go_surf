@@ -69,4 +69,17 @@ $(function(){
 
     });
 
+
+    // Error
+    
+    // $('.quantity-button').on(click, function() {
+    //   let summ = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() - 1) * $('.summ').data('guests');
+    //   $('.summ').html('$' + summ);
+    // });
+
+    //NaN
+    let summ = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() - 1) * $('.summ').data('guests');
+    $('.summ').html('$' + summ);
+
+ 
 });
