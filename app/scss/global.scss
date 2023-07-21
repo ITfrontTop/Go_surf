@@ -27,6 +27,7 @@ a {
     padding-left: 103px;
     position: relative;
     display: inline-block;
+
     &::before {
         content: '';
         position: absolute;
@@ -48,6 +49,7 @@ a {
     padding-right: 103px;
     position: relative;
     display: inline-block;
+
     &::before {
         content: '';
         position: absolute;
@@ -68,6 +70,7 @@ a {
         transform: translateX(-50px);
         display: inline-block;
     }
+
     h3 {
         position: absolute;
         top: 0;
@@ -75,6 +78,7 @@ a {
         @extend %fira-800;
         color: #fff;
         font-size: 80px;
+
         &::after {
             content: '';
             position: absolute;
@@ -90,10 +94,12 @@ a {
 .subtitle {
     display: inline-block;
     text-align: right;
+
     &__head {
         @extend %fira-800;
         font-size: 40px;
         padding-right: 10px;
+
         span {
             @extend %fira-100;
         }
@@ -103,12 +109,15 @@ a {
 .descr {
     display: inline-block;
     padding-left: 5px;
+
     &__head {
         @extend %fira-800;
         font-size: 40px;
+
         img {
             display: inline-block;
         }
+
         span {
             @extend %fira-100;
         }
@@ -119,12 +128,14 @@ a {
     @extend %fira-800;
     font-size: 40px;
     line-height: 36px;
+
     span {
         padding: 17px 57px 15px 17px;
         background-color: $green;
         display: inline-block;
         margin-left: 19px;
         position: relative;
+
         &::before {
             content: '';
             position: absolute;
@@ -135,6 +146,7 @@ a {
             left: -10px;
 
         }
+
         &::after {
             content: '';
             position: absolute;
@@ -148,11 +160,81 @@ a {
     }
 }
 
+/* added class sleep */
+
 .surf,
-.travel {
+.holder,
+.sleep {
     padding: 160px 0 120px;
 }
 
-.travel {
+.holder,
+.sleep {
     padding-bottom: 265px;
+    margin-bottom: 35px;
+}
+
+/* input */
+.quantity {
+    display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity input {
+    width: 45px;
+    height: 42px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    line-height: 36px;
+    @extend %fira-800;
+    color: #fff;
+}
+
+.quantity input:focus {
+    outline: 0;
+}
+
+.quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+}
+
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+}
+
+.quantity-button.quantity-up {
+    position: absolute;
+    right: -190px;
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    right: -160px;
+}
+
+.star-list {
+    li {
+        display: inline-block;
+        margin-left: -25px;
+    }
 }
