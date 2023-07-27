@@ -235,9 +235,6 @@ input[type=number] {
 .star-list {
     li {
         display: inline-block;
-        & + li {
-            margin-left: -25px;
-        }
+        margin-left: -25px;
     }
 }
-
