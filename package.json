@@ -1,7 +1,6 @@
 {
   "name": "start_gulp_new",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,8 +26,8 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^9.1.1"
   },
+  "description": "",
   "dependencies": {
-    "animate.css": "^4.1.1",
     "jquery": "^3.7.0"
   }
 }
