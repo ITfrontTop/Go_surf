@@ -410,12 +410,14 @@
 }
 
 .slider-dots__content {
+
     display: none;
     background: rgba(#0F1010, .7);
     border-radius: 6px;
     position: absolute;
     bottom: 35px;
     transform: translateX(-50%);
+    z-index: 1;
     &::before {
         content: '';
         position: absolute;
@@ -898,8 +900,16 @@
     .header__arrows {
         left: 20px;
         bottom: 20px;
-
     }
+
+    .shop__slider-content {
+        padding-left: 40px;
+    }
+
+    .shop__slider-price {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (max-width: 1340px) {
@@ -918,6 +928,8 @@
     .slider-arrows__left {
         right: 60px;
     }
+
+
 }
 
 @media (max-width: 1287px) {
@@ -974,6 +986,29 @@
     .slider-dots--8 {
         top: 397px;
         left: 35px;
+    }
+
+    .shop__slider-inner {
+        display: block;
+    }
+
+    .shop__slider-info {
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+
+    .shop__slider {
+        padding-left: 20px;
+    }
+
+    .surfboard__position--3 .surfboard-box__content {
+        left: 60px;
+    }
+
+    .surfboard__position--3 .surfboard-box__content::before {
+        width: 20px;
+        right: auto;
+        left: -32px;
     }
 }
 
@@ -1086,11 +1121,18 @@
         padding-left: 65px;
     }
 
+    .headline-right {
+        font-size: 16px;
+        line-height: 18px;
+        padding-right: 65px;
+    }
+
     .slider-item__info-suptext {
         margin-bottom: 5px;
     }
 
-    .headline-left::before {
+    .headline-left::before,
+    .headline-right::before {
         width: 50px;
     }
 
@@ -1154,6 +1196,18 @@
             }
         }
     }
+    .quentity-button .quantity-up {
+        right: auto;
+        left: 25px;
+    }
+
+    .quantity-button .quantity-down {
+        right: auto;
+    }
+
+    .sleep .holder-slider__descr {
+        background-position: right 10px;
+    }
 }
 
 
@@ -1161,18 +1215,33 @@
 @media (max-width: 960px) {
     .slider-dotshead {
         display: none;
-
     }
 }
 
 @media (max-width: 767px) {
-
+    .surfboard-box__content {
+        padding-left: 0;
+        top: 35px;
+        left: 0;
+        width: 270px;
+        &::before {
+            display: none;
+        }
+    }
+    .surfboard__position--1 {
+        .surfboard-box__content {
+            left: -177px;
+        }
+    }
+    .shop__extras {
+        padding-left: 75px;
+    }
 }
 
 @media (max-width: 720px) {
     .title {
         span {
-            font-size: 100px;
+            font-size: 87px;
             padding-bottom: 80px;
             padding-left: 10px;
         }
@@ -1195,9 +1264,33 @@
     }
 }
 
+@media (max-width: 680px) {
+    .shop__slider-content {
+        display: block;
+    }
+
+    .shop__extras {
+        padding-left: 0;
+        padding-top: 35px;
+    }
+
+    .surfboard__position--1 {
+        left: 155px;
+    }
+
+    .footer {
+        padding: 100px 0 34px;
+    }
+}
+
 @media (max-width: 640px) {
     .holder-slider__descr {
         background-image: none !important;
+    }
+
+    .btn {
+        font-size: 30px;
+        line-height: 36px;
     }
 }
 
@@ -1209,7 +1302,10 @@
     .subtitle__head {
         font-size: 32px;
         padding-right: 0;
+    }
 
+    .descr__head {
+        font-size: 32px;
     }
 }
 
@@ -1238,7 +1334,21 @@
         display: none;
     }
 
-    
+    .holder {
+        background-size: 120px;
+    }
+
+    .shop__slider-content {
+        padding-left: 0;
+    }
+
+    .surfboard__position--2 {
+        left: 3px;
+    }
+
+    .surfboard__position--1 .surfboard-box__content {
+        left: -146px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -1246,6 +1356,15 @@
     .slider-map .slider-dots__content {
         width: 250px;
         padding: 28px 15px 0;
+    }
+
+    .holder-slider__descr .descr__head .holder__star-list {
+        position: static;
+        margin-left: -15px;
+    }
+
+    .holder-slider__descr .descr__head.descr__head-sleep {
+        padding-right: 0;
     }
 }
 
@@ -1255,11 +1374,11 @@
         width: 200px;
         padding: 28px 10px 0;
     }
+    .shop__extras-box {
+        margin-right: 30px;
+    }
 }
 
-@media (max-width: 320px) {
-    
-}
 
 
 
